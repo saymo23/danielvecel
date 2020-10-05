@@ -1,20 +1,13 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="h-full flex flex-row justify-center items-center ">
+    <Nuxt class=" " />
   </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -22,8 +15,17 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  height: 100%;
 }
+body{
+  @apply bg-gradient-to-r from-teal-400 to-blue-500;
+  height: 100%;
+  padding: 2rem;
 
+}
+#__nuxt, #__layout{
+  height: 100%;
+}
 *,
 *::before,
 *::after {

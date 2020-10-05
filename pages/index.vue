@@ -1,78 +1,50 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        DanielSantarriaga
+<div>
+  <div id="card">
+    <div id="datos">
+      <img src="../static/me.jpg" alt="Me" class="me w-64" />
+      <h1 >
+        <span class="font-bold text-gray-600">DANIEL</span> SANTARRIAGA  
+        
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <h2 >
+        Fullstack Developer Web
+      </h2>
+      <p>
+        Soy desarrollador web por mi amor a crear cosas nuevas.
+      </p>
+      <Contacts />
     </div>
+    
   </div>
+</div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+<style lang='scss'>
+#card {
+  @apply flex justify-center items-center text-center  bg-gray-200 h-auto p-12 rounded-lg shadow-lg ;
+  width: 450px;
+  #datos{
+    @apply flex flex-col justify-center items-center;
+    h1{
+      @apply text-3xl font-thin  ;
+    }
+    h2{
+      @apply text-xl text-orange-600 font-bold pb-2
+    }
+    p{
+      @apply text-gray-600 mb-4;
+    }
+    .me{
+      @apply rounded-full mb-4;
+    }
+    
+  }
+  
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
