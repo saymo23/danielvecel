@@ -47,5 +47,15 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+  tailwindcss: {
+    theme:{ 
+        rotate: {
+          '-6': '-10deg',
+        } 
+    },
+    variants: {},
+    plugins: [],
+  
+}
 }

@@ -12,5 +12,8 @@
 <style lang="scss">
 #contacts {
   @apply text-3xl flex flex-row;
+  svg:hover > path{
+    fill: #975a16
+  }
 }
 </style>
